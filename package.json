@@ -1,0 +1,22 @@
+{
+  "name": "logo-design-assessment",
+  "version": "1.0.0",
+  "description": "A website where a client can provide details about their needs for a logo, by doing so a designer can have a quick and light overview of client's need.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rashiv-16/logo-design-assessment.git"
+  },
+  "keywords": [
+    "logo-design-assessment"
+  ],
+  "author": "Abhishek Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rashiv-16/logo-design-assessment/issues"
+  },
+  "homepage": "https://github.com/Rashiv-16/logo-design-assessment#readme"
+}
