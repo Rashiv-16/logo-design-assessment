@@ -1,0 +1,195 @@
+:root {
+    --color1: rgb(11,12,64);
+    --color2: rgb(23,35,128);
+    --color3: rgb(34,37,191);
+    --color4: rgb(45,49,255);
+
+    --color5: #F29F05;
+    --color6: #F2B705;
+    --color7: rgb(20, 18, 89);
+    --color8: #200F8C;
+    --color9: #2703A6;
+
+    --color10: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(135deg, var(--color6), var(--color5));
+    max-width: 1000px;
+    margin: 50px auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo-container {
+    width: 100px;
+}
+
+.logo {
+    fill: var(--color1);
+}
+
+main {
+    margin-top: 50px;
+    width: 90%;
+    max-width: 800px;
+}
+
+main > h3 {
+    color: var(--color10);
+    letter-spacing: 1px;
+}
+
+.slider-container {
+    margin-top: 30px;
+}
+
+.slider-tag-container {
+    display: flex;
+    flex-flow: row nowrap;
+    /* border: 1px solid red; */
+}
+
+.slider-tag-container > p {
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.slider-tag-container > p:first-child{
+    text-align: start;
+}
+
+.slider-tag-container > p:last-child{
+    text-align: end;
+}
+
+.slider-track {
+    /* border: 1px solid black; */
+    background-color: var(--color4);
+    width: 100%;
+    height: 9px;
+    border-radius: 50px;
+    margin-top: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); */
+
+    position: relative;
+}
+
+.slider-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: var(--color7);
+    border-radius: 50%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider-thumb:hover {
+    cursor: grab;
+}
+.slider-thumb:active {
+    background-color: rgb(17, 15, 68);
+    cursor: grabbing;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+label, textarea {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+label {
+    margin-top: 30px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 2px;
+    color: var(--color7);
+    font-family: inherit;
+
+    transition: 0.3s background-color ease;
+}
+
+textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: var(--color4);
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    transition: 0.3s background-color ease;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.contact > div {
+    width: 47%;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+
+}
+
+input[type=text]:focus {
+    background-color: #ffffff; 
+    border: none;
+    outline: none;
+}
+
+input[type=submit]:active {
+    background-color: var(--color7);
+    outline: none;
+    border: none;
+}
