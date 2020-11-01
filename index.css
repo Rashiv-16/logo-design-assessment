@@ -193,3 +193,13 @@ input[type=submit]:active {
     outline: none;
     border: none;
 }
+
+@media screen and (max-width: 700px) {
+    .contact {
+        flex-flow: column nowrap;
+    }
+
+    .contact > div {
+        width: 100%;
+    }
+}
