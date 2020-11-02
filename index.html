@@ -14,70 +14,42 @@
     <main>
         <h3>How would you describe your logo?</h3>
         <h3>Fill out the form below:</h3>
-        <div class="slider-container">
-            <div class="slider-tag-container">
-                <p>Classic</p>
-                <p>Modern</p>
-            </div>
-            <div class="slider-track">
-                <div class="slider-thumb"></div>
-            </div>
-        </div>
-        <div class="slider-container">
-            <div class="slider-tag-container">
-                <p>Playful</p>
-                <p>Sophisticated</p>
-            </div>
-            <div class="slider-track">
-                <div class="slider-thumb"></div>
-            </div>
-        </div>
-        <div class="slider-container">
-            <div class="slider-tag-container">
-                <p>Feminine</p>
-                <p>Masculine</p>
-            </div>
-            <div class="slider-track">
-                <div class="slider-thumb"></div>
-            </div>
-        </div>
-        <div class="slider-container">
-            <div class="slider-tag-container">
-                <p>Mature</p>
-                <p>Youthful</p>
-            </div>
-            <div class="slider-track">
-                <div class="slider-thumb"></div>
-            </div>
-        </div>
-        <div class="slider-container">
-            <div class="slider-tag-container">
-                <p>Abstract</p>
-                <p>Literal</p>
-            </div>
-            <div class="slider-track">
-                <div class="slider-thumb"></div>
-            </div>
-        </div>
-        <div class="slider-container">
-            <div class="slider-tag-container">
-                <p>Economical</p>
-                <p>Luxurious</p>
-            </div>
-            <div class="slider-track">
-                <div class="slider-thumb"></div>
-            </div>
-        </div>
-        <div class="slider-container">
-            <div class="slider-tag-container">
-                <p>Geometric</p>
-                <p>Organic</p>
-            </div>
-            <div class="slider-track">
-                <div class="slider-thumb"></div>
-            </div>
-        </div>
         <form method="POST">
+            <datalist id="tickmarks1">
+                <option value="0" label="Classic"></option>
+                <option value="10" label="Modern"></option>
+            </datalist>
+            <input type="range" name="classic-modern" id="classic-modern" min="0" max="10" step="0.01" list="tickmarks1">
+            <datalist id="tickmarks2">
+                <option value="0" label="Playful"></option>
+                <option value="10" label="Sophisticated"></option>
+            </datalist>
+            <input type="range" name="playful-sophisticated" id="playful-sophisticated" min="0" max="10" step="0.01" list="tickmarks2">
+            <datalist id="tickmarks3">
+                <option value="0" label="Feminine"></option>
+                <option value="10" label="Masculine"></option>
+            </datalist>
+            <input type="range" name="feminine-masculine" id="feminine-masculine" min="0" max="10" step="0.01" list="tickmarks3">
+            <datalist id="tickmarks4">
+                <option value="0" label="Mature"></option>
+                <option value="10" label="Youthful"></option>
+            </datalist>
+            <input type="range" name="mature-youthful" id="mature-youthful" min="0" max="10" step="0.01" list="tickmarks4">
+            <datalist id="tickmarks5">
+                <option value="0" label="Abstract"></option>
+                <option value="10" label="Literal"></option>
+            </datalist>
+            <input type="range" name="abstract-literal" id="abstract-literal" min="0" max="10" step="0.01" list="tickmarks5">
+            <datalist id="tickmarks6">
+                <option value="0" label="Economic"></option>
+                <option value="10" label="Luxurious"></option>
+            </datalist>
+            <input type="range" name="economic-luxurious" id="economic-luxurious" min="0" max="10" step="0.01" list="tickmarks6">
+            <datalist id="tickmarks7">
+                <option value="0" label="Geometric"></option>
+                <option value="10" label="Organic"></option>
+            </datalist>
+            <input type="range" name="geometric-organic" id="geometric-organic" min="0" max="10" step="0.01" list="tickmarks7">
             <label for="define">How would you define your company? Who is your targeted audience?</label>
             <textarea name="define" id="define" ></textarea>
             <label for="brief">Tell us about your company's history and it's goals.</label>
